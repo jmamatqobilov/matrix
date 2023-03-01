@@ -21,7 +21,7 @@ export default {
 
   data() {
     return {
-      tab: null,
+      tab: 1,
       value:0
     }
   },
