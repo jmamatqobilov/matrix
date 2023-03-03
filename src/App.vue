@@ -3,7 +3,6 @@
     <div class="index-view">
       <Index />
     </div>
-
   </v-app>
 </template>
 

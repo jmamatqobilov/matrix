@@ -1,17 +1,34 @@
 <template>
-  <v-card width="368px" height="320px" color="white" class="card">
-    <v-col cols="12" sm="3">
-      <v-progress-circular model-value="40" color="deep-orange-lighten-2">{{ value }}</v-progress-circular>
-    </v-col>
-  </v-card>
+  <v-container>
+    <v-row justify="center">
+      <v-col sm="12" align-self="center" md="6" lg="4">
+        <v-card width="368" height="320">
+          <v-progress-circular model-value="40" color="deep-orange-lighten-2">{{ value }}</v-progress-circular>
+        </v-card>
+      </v-col>
+      <v-col sm="12"  align-self="center" md="6" lg="4">
+        <v-card width="368" height="320">
+          <v-progress-circular model-value="40" color="deep-orange-lighten-2">{{ value }}</v-progress-circular>
+        </v-card>
+      </v-col>
+      <v-col sm="12"  align-self="center" md="6" lg="4">
+        <v-card width="368" height="320">
+          <v-progress-circular model-value="40" color="deep-orange-lighten-2">{{ value }}</v-progress-circular>
+        </v-card>
+      </v-col>
+  </v-row>
+  <div class="">
+    <div class="">
+      All
+    </div>
+  </div>
+  </v-container>
+
+
 </template>
 
 <script>
-
-
-// Components
-
-
+import SimpleCard from "."
 export default {
   name: 'HomeView',
 
@@ -22,7 +39,7 @@ export default {
   data() {
     return {
       tab: 1,
-      value:0
+      value: 0
     }
   },
 };
